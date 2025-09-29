@@ -22,9 +22,27 @@ export async function getTopCoins(vs = "usd", perPage = 50, page = 1): Promise<M
 }
 
 // Get single coin market chart (for the chart)
-export async function getCoinMarketChart(coinId: string, vs = "usd", days: number | "max" = 30) {
+export async function getCoinMarketChart(
+  coinId: string,
+  vs = "usd",
+  days: number | "max" = 30
+) {
   const { data } = await api.get<MarketChart>(`/coins/${coinId}/market_chart`, {
     params: { vs_currency: vs, days },
+  });
+  return data;
+}
+
+// Get single coin detail info
+export async function getCoinDetail(coinId: string) {
+  const { data } = await api.get(`/coins/${coinId}`, {
+    params: {
+      localization: false,
+      tickers: false,
+      community_data: false,
+      developer_data: false,
+      sparkline: false,
+    },
   });
   return data;
 }

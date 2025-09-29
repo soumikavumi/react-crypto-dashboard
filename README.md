@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# 🚀 React Crypto Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **real-time cryptocurrency dashboard** built with **React + TypeScript + Vite**.  
+It fetches live market data from the [CoinGecko API](https://www.coingecko.com/en/api) and provides interactive tools for exploring, tracking, and analyzing cryptocurrencies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+- 📊 **Live Market Overview** – View top cryptocurrencies with price, market cap, and 24-hour changes in real time.  
+- 📈 **Interactive Charts** – Explore historical price data with selectable time ranges (7d, 30d, 90d, 1y).  
+- 🔍 **Search & Sorting** – Quickly filter and sort by market cap, price, or percentage change.  
+- ⭐ **Watchlist** – Save your favorite coins locally using browser storage.  
+- 🔔 **Price Alert** – Set a custom price target and get an alert when the coin hits it.  
+- 📱 **Responsive UI** – Clean, mobile-friendly design built with modern CSS.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology | Purpose |
+|------------|---------|
+| **React + Vite** | Frontend framework & development tooling |
+| **TypeScript** | Type-safe JavaScript |
+| **Axios** | API requests |
+| **Recharts** | Interactive data visualization |
+| **React Router** | Client-side routing |
+| **LocalStorage** | Persistent watchlist and settings |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Installation & Setup
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/soumikavumi/react-crypto-dashboard.git
+cd react-crypto-dashboard
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🚀 React Crypto Dashboard
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A modern **real-time cryptocurrency dashboard** built with **React + TypeScript + Vite**.  
+It fetches live market data from the [CoinGecko API](https://www.coingecko.com/en/api) and provides interactive tools for exploring, tracking, and analyzing cryptocurrencies.
+
+---
+
+## 🌟 Features
+
+- 📊 **Live Market Overview** – View top cryptocurrencies with price, market cap, and 24-hour changes in real time.  
+- 📈 **Interactive Charts** – Explore historical price data with selectable time ranges (7d, 30d, 90d, 1y).  
+- 🔍 **Search & Sorting** – Quickly filter and sort by market cap, price, or percentage change.  
+- ⭐ **Watchlist** – Save your favorite coins locally using browser storage.  
+- 🔔 **Price Alert** – Set a custom price target and get an alert when the coin hits it.  
+- 📱 **Responsive UI** – Clean, mobile-friendly design built with modern CSS.  
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **React + Vite** | Frontend framework & development tooling |
+| **TypeScript** | Type-safe JavaScript |
+| **Axios** | API requests |
+| **Recharts** | Interactive data visualization |
+| **React Router** | Client-side routing |
+| **LocalStorage** | Persistent watchlist and settings |
+
+
+
+## Install dependencies
+npm install
+
+
+## Run the development server
+npm run dev
+
+## Open in browser
+Visit: http://localhost:5173
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/soumikavumi/react-crypto-dashboard.git
+cd react-crypto-dashboard

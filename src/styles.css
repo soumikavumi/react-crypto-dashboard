@@ -1,0 +1,28 @@
+/* styles.css — extra styling file for Crypto Dashboard */
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.table tr:hover {
+  background: rgba(148,163,184,0.05);
+}
+
+.button:hover {
+  background: rgba(56,189,248,0.1);
+  border-color: var(--accent);
+}
+
+.input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 4px;
+}
